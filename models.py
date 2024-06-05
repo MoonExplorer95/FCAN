@@ -152,7 +152,7 @@ class FCANet(nn.Module):
 
         target_high = self.pool_layer(target_high)
         target_low = self.pool_layer(target_low)
-        target = target_high + target_low
+        target = target_high
 
         # classification
         source_clf = self.classifier_layer(source)
